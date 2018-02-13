@@ -2,6 +2,12 @@
 #include "Effect.h"
 #include "complex.h"
 #include "RFFT/FFTReal.h"
+
+///<summary> This effect class is performing conversion of time domain samples to frequency domain,
+///			 processes data, and then goes back to time domain without remarkable distortion.</summary>
+///
+///<remarks> Mateusz Kowalik, 12.02.2018.</remarks>
+
 class FShift :
 	public Effect
 {

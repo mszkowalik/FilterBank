@@ -3,6 +3,7 @@
 #include "FShift.h"
 
 
+
 Filter::Filter(FilterSettings Settings)
 {
 	settings = Settings;
@@ -13,6 +14,7 @@ Filter::Filter(FilterSettings Settings)
 	inputBuffer.resize(settings.bufferSize);
 	outputBuffer.resize(settings.bufferSize);
 }
+
 Filter::~Filter()
 {
 	if (effect) delete effect;

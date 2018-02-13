@@ -3,6 +3,7 @@
 #include "FShift.h"
 
 
+
 Effect::Effect(FilterSettings _settings, Effect* _child)
 { 
 	settings = _settings;
@@ -45,6 +46,7 @@ void Effect::setParamsList(ParameterList _list)
 	ParamsList = _list ;
 
 }
+
 Effect * Effect::EffectFactory(ParameterList params, Effects type, FilterSettings settings)
 {
 	Effect* ret = nullptr;
